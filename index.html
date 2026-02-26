@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arabic Casino</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <!-- SVG Sprite -->
+  <div class="svg-sprite" style="display: none"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol viewBox="0 0 40 40" id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#a)" transform="matrix(-1 0 0 1 40 0)">
+          <path d="M40 20C40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20 20-8.954 20-20Z" />
+          <path d="M18 24.056v-9.137c0-.806 1.087-1.229 1.713-.653l4.974 4.569c.418.384.418.96 0 1.305l-4.974 4.569c-.626.614-1.713.191-1.713-.653Z" />
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 40 40" id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#a)">
+          <path d="M40 20C40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20 20-8.954 20-20Z" />
+          <path d="M18 24.056v-9.137c0-.806 1.087-1.229 1.713-.653l4.974 4.569c.418.384.418.96 0 1.305l-4.974 4.569c-.626.614-1.713.191-1.713-.653Z" />
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 128 83" id="icon-cards1" xmlns="http://www.w3.org/2000/svg">
+        <path opacity=".4" fill-rule="evenodd" clip-rule="evenodd" d="M66.38 16.937a37.82 37.82 0 0 1 8.805 24.33 37.82 37.82 0 0 1-8.807 24.33l14.528 14.606a7.89 7.89 0 0 0 11.21 0L125.244 46.9a7.995 7.995 0 0 0 0-11.27L92.119 2.335a7.891 7.891 0 0 0-11.21 0l-14.53 14.602Zm19.88-1.568a6.92 6.92 0 0 1 4.905 2.042 6.991 6.991 0 0 1 2.031 4.93 6.99 6.99 0 0 1-2.031 4.931 6.917 6.917 0 0 1-4.905 2.042 6.917 6.917 0 0 1-4.904-2.042 6.991 6.991 0 0 1-2.031-4.93c0-1.85.73-3.623 2.031-4.93a6.917 6.917 0 0 1 4.904-2.043Zm6.936 46.816a7.004 7.004 0 0 0-2.031-4.93 6.904 6.904 0 0 0-9.809 0 6.976 6.976 0 0 0-2.031 4.93c0 1.85.73 3.623 2.031 4.93a6.917 6.917 0 0 0 4.904 2.043c1.84 0 3.604-.734 4.905-2.042a6.991 6.991 0 0 0 2.031-4.93Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M75.305 41.267c0 20.904-16.859 37.852-37.653 37.852C16.858 79.119 0 62.17 0 41.267 0 20.363 16.858 3.416 37.652 3.416s37.653 16.947 37.653 37.851Zm-45.074.235 7.68-11.29 7.985 10.98-7.677 11.291-7.986-10.98h-.002Zm33.184-.235c0 14.304-11.534 25.899-25.763 25.899-14.228 0-25.762-11.595-25.762-25.899S23.424 15.37 37.652 15.37c14.23 0 25.763 11.594 25.763 25.898Zm1.981 0c0 15.404-12.421 27.891-27.744 27.891-15.322 0-27.743-12.487-27.743-27.89 0-15.404 12.42-27.891 27.743-27.891 15.323 0 27.744 12.487 27.744 27.89Z" />
+      </symbol>
+      <symbol viewBox="0 0 120 85" id="icon-cards2" xmlns="http://www.w3.org/2000/svg">
+        <path opacity=".4" fill-rule="evenodd" clip-rule="evenodd" d="m74.866 33.17 5.449-3.951v-14.72L69.433 6.613A37.92 37.92 0 0 0 60 11.488 37.964 37.964 0 0 1 74.866 33.17ZM66.759 67.2a37.833 37.833 0 0 0 7.485-13.352h14.554l8.087 11.655-4.21 13.312a38.046 38.046 0 0 1-10.672 1.517 38.042 38.042 0 0 1-11.978-1.922L66.759 67.2Zm46.55-3.283-15.002.127-8.145-11.735 4.22-12.963 13.74-4.57L120 43.189a37.665 37.665 0 0 1-6.691 20.727Zm-1.346-44.84-4.311 13.751-13.853 4.61-11.482-8.324V14.605l11.414-8.274a38.07 38.07 0 0 1 18.232 12.745Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M67.562 66.209A37.84 37.84 0 0 0 76 42.33a37.84 37.84 0 0 0-8.438-23.878C55.452 19.673 46 29.899 46 42.331s9.452 22.656 21.562 23.878Zm-1.564 1.816C53.538 66.099 44 55.329 44 42.33c0-13 9.54-23.768 21.998-25.694A37.898 37.898 0 0 0 40 4.383v75.896a37.897 37.897 0 0 0 25.998-12.254ZM38 80.33a37.897 37.897 0 0 1-27.8-12.092C23.53 67.12 34 55.95 34 42.33c0-13.618-10.47-24.79-23.8-25.908A37.898 37.898 0 0 1 38 4.331v76Zm-38-38c0 9.1 3.2 17.452 8.532 23.994C21.542 66.043 32 55.407 32 42.33S21.54 18.619 8.532 18.337A37.84 37.84 0 0 0 0 42.331Z" />
+      </symbol>
+      <symbol viewBox="0 0 116 85" id="icon-cards3" xmlns="http://www.w3.org/2000/svg">
+        <path opacity=".4" fill-rule="evenodd" clip-rule="evenodd" d="M75.52 48.377a37.832 37.832 0 0 1-7.924 17.79A25.91 25.91 0 0 0 78 68.33c14.36 0 26-11.64 26-26s-11.64-26-26-26c-3.7 0-7.218.772-10.404 2.164A37.833 37.833 0 0 1 75.53 36.34l3.492-5.108 8.062 11.022-7.75 11.336-3.812-5.214h-.002ZM66.246 67.75A38.19 38.19 0 0 1 58 74.65a37.824 37.824 0 0 0 20 5.68c20.986 0 38-17.014 38-38s-17.014-38-38-38c-7.34 0-14.19 2.08-20 5.682a38.192 38.192 0 0 1 8.246 6.898A27.896 27.896 0 0 1 78 14.33c15.464 0 28 12.536 28 28s-12.536 28-28 28c-4.198 0-8.18-.924-11.754-2.58Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M76 42.33c0 20.987-17.014 38-38 38s-38-17.013-38-38c0-20.985 17.014-38 38-38s38 17.015 38 38Zm-38 26c14.36 0 26-11.64 26-26s-11.64-26-26-26-26 11.64-26 26 11.64 26 26 26Zm0 2c15.464 0 28-12.535 28-28 0-15.463-12.536-28-28-28s-28 12.537-28 28c0 15.465 12.536 28 28 28Zm-6-44v5.607a11.996 11.996 0 0 0-6 10.394c0 4.44 2.414 8.32 6 10.394v5.606h4v-4.166c1.324.222 2.676.222 4 0v4.166h4v-5.606a12.038 12.038 0 0 0 5.318-6.394H44.93a8 8 0 1 1 0-8h4.388A12.038 12.038 0 0 0 44 31.937V26.33h-4v4.166a12.074 12.074 0 0 0-4 0V26.33h-4Z" />
+      </symbol>
+      <symbol viewBox="0 0 70 57" id="icon-cards4" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd">
+          <path d="M50.347 32.441a25.441 25.441 0 0 1-5.283 11.93c2.188.96 4.55 1.454 6.936 1.45 9.573 0 17.333-7.805 17.333-17.434 0-9.63-7.76-17.436-17.333-17.436a17.2 17.2 0 0 0-6.936 1.451 25.441 25.441 0 0 1 5.29 11.968l2.327-3.426 5.375 7.392-5.167 7.602-2.54-3.497h-.002Zm-6.183 12.992a25.493 25.493 0 0 1-5.497 4.627A25.106 25.106 0 0 0 52 53.869c13.99 0 25.333-11.41 25.333-25.482C77.333 14.314 65.991 2.904 52 2.904c-4.893 0-9.46 1.395-13.333 3.81a25.495 25.495 0 0 1 5.497 4.626A18.505 18.505 0 0 1 52 9.61c10.31 0 18.667 8.407 18.667 18.777 0 10.37-8.358 18.776-18.667 18.776-2.799 0-5.453-.62-7.836-1.73Z" />
+          <path d="M50.667 28.387c0 14.073-11.343 25.482-25.334 25.482C11.343 53.869 0 42.459 0 28.387 0 14.314 11.343 2.904 25.333 2.904c13.991 0 25.334 11.41 25.334 25.483ZM25.333 45.822c9.574 0 17.334-7.806 17.334-17.435 0-9.63-7.76-17.436-17.334-17.436C15.76 10.951 8 18.757 8 28.387c0 9.63 7.76 17.435 17.333 17.435Zm0 1.341C35.643 47.163 44 38.757 44 28.387S35.643 9.61 25.333 9.61c-10.309 0-18.666 8.407-18.666 18.777 0 10.37 8.357 18.776 18.666 18.776Zm-4-29.506v3.76a8.02 8.02 0 0 0-2.928 2.945 8.081 8.081 0 0 0-1.072 4.025 8.056 8.056 0 0 0 4 6.97v3.76H24v-2.795a8 8 0 0 0 2.667 0v2.794h2.666v-3.76a8.062 8.062 0 0 0 3.546-4.287h-2.926a5.343 5.343 0 0 1-2.578 2.274 5.305 5.305 0 0 1-3.42.226 5.332 5.332 0 0 1-2.852-1.917 5.385 5.385 0 0 1 0-6.531 5.332 5.332 0 0 1 2.851-1.916 5.305 5.305 0 0 1 3.421.225 5.343 5.343 0 0 1 2.578 2.274h2.926a8.062 8.062 0 0 0-3.546-4.287v-3.76h-2.666v2.794a8 8 0 0 0-2.667 0v-2.794h-2.667Z" />
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 129 85" id="icon-cards5" xmlns="http://www.w3.org/2000/svg">
+        <path opacity=".4" fill-rule="evenodd" clip-rule="evenodd" d="M67.437 18a37.82 37.82 0 0 1 8.805 24.33c0 9.264-3.31 17.75-8.807 24.329l14.528 14.606a7.89 7.89 0 0 0 11.21 0L126.3 47.964a7.967 7.967 0 0 0 1.718-2.585 8.012 8.012 0 0 0 0-6.1 7.965 7.965 0 0 0-1.718-2.585L93.175 3.397a7.89 7.89 0 0 0-11.21 0L67.437 17.999Zm19.88-1.569c1.84 0 3.604.735 4.905 2.043a6.991 6.991 0 0 1 2.031 4.93c0 1.85-.73 3.623-2.031 4.93a6.918 6.918 0 0 1-4.905 2.043 6.918 6.918 0 0 1-4.904-2.042 6.992 6.992 0 0 1-2.032-4.93 6.99 6.99 0 0 1 2.032-4.931 6.917 6.917 0 0 1 4.904-2.043Zm6.936 46.817a7.004 7.004 0 0 0-2.031-4.93 6.904 6.904 0 0 0-9.809 0 6.978 6.978 0 0 0-2.032 4.93c0 1.85.731 3.623 2.032 4.93a6.917 6.917 0 0 0 4.904 2.043c1.84 0 3.604-.735 4.905-2.043a6.991 6.991 0 0 0 2.031-4.93Z" />
+        <path d="M38.71 4.479c20.793 0 37.652 16.947 37.652 37.851S59.503 80.182 38.709 80.182c-20.794 0-37.652-16.948-37.652-37.852 0-20.904 16.858-37.851 37.652-37.851Zm0 9.96c-15.323 0-27.745 12.488-27.745 27.891 0 15.404 12.422 27.89 27.744 27.89 15.323 0 27.744-12.486 27.744-27.89 0-15.403-12.421-27.89-27.744-27.89Zm0 1.993c14.228 0 25.762 11.594 25.762 25.898S52.938 68.228 38.709 68.228c-14.228 0-25.761-11.594-25.762-25.898 0-14.304 11.534-25.898 25.762-25.898Zm-6.46 12.601a1.001 1.001 0 0 0-1.126 1.465L44.96 54.505a1.002 1.002 0 0 0 1.734-1.003L32.857 29.495a1 1 0 0 0-.607-.462Zm6.744 20.961A2.001 2.001 0 0 0 36.992 52a2.001 2.001 0 1 0 3.85-.767 2.007 2.007 0 0 0-1.848-1.238Zm-1.896-5.929a1 1 0 0 0-.394.047 7.863 7.863 0 0 0-3.295 1.978 1.004 1.004 0 0 0 .012 1.405 1 1 0 0 0 1.404.012 5.871 5.871 0 0 1 2.457-1.477 1.002 1.002 0 0 0-.184-1.965Zm-3.116-5.027a1 1 0 0 0-.385.089 13.604 13.604 0 0 0-4.252 2.892 1.003 1.003 0 0 0 .708 1.71 1 1 0 0 0 .707-.294 11.607 11.607 0 0 1 3.627-2.467 1.003 1.003 0 0 0-.405-1.93Zm7.17-.85a1 1 0 0 0-.977 1.581 1.004 1.004 0 0 0 .663.398 11.569 11.569 0 0 1 6.39 3.268 1 1 0 0 0 1.708-.708c0-.265-.106-.52-.293-.708a13.568 13.568 0 0 0-7.491-3.831Zm11.555-.242A19.328 19.328 0 0 0 37.94 32.29a1 1 0 0 0-.937 1.054 1.005 1.005 0 0 0 1.044.947 17.322 17.322 0 0 1 13.245 5.073 1 1 0 1 0 1.415-1.417ZM31.301 34.17a1 1 0 0 0-.746.019 19.31 19.31 0 0 0-5.274 3.758 1.003 1.003 0 0 0 .71 1.699 1 1 0 0 0 .705-.282 17.307 17.307 0 0 1 4.729-3.37 1.004 1.004 0 0 0-.124-1.824Z" />
+      </symbol>
+      <symbol viewBox="0 0 12 12" id="icon-cashback" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 0a6 6 0 1 0 0 12A6 6 0 0 0 6 0Zm1.723 8.365a1.93 1.93 0 0 1-1 .642c-.172.047-.251.139-.242.319.008.178 0 .353-.002.53 0 .159-.081.243-.237.248-.101.002-.202.005-.304.005-.089 0-.178 0-.266-.003-.168-.002-.247-.099-.247-.262-.003-.128-.003-.259-.003-.387-.002-.287-.012-.297-.286-.341-.35-.057-.696-.136-1.017-.291-.252-.124-.28-.185-.208-.452.054-.198.109-.395.17-.59.045-.143.087-.208.163-.208.045 0 .102.023.178.062.356.185.734.289 1.131.338.067.008.133.013.2.013.185 0 .366-.035.54-.111.443-.193.512-.704.14-1.01a1.803 1.803 0 0 0-.423-.247c-.388-.17-.79-.299-1.156-.519-.592-.355-.968-.842-.923-1.563.05-.815.511-1.323 1.26-1.595.308-.11.31-.108.31-.43 0-.108-.002-.217.003-.328.007-.242.047-.284.289-.291h.281c.46 0 .46.02.462.516.002.365.002.365.365.422.28.045.543.126.8.24.141.061.195.16.15.31-.063.223-.125.448-.194.667-.045.134-.087.195-.166.195a.396.396 0 0 1-.168-.051 2.525 2.525 0 0 0-1.269-.252.996.996 0 0 0-.338.069c-.385.168-.447.592-.118.854.165.134.355.227.55.309.34.14.682.276 1.005.454 1.017.568 1.294 1.86.57 2.738Z" />
+      </symbol>
+      <symbol viewBox="0 0 16 16" id="icon-clock" xmlns="http://www.w3.org/2000/svg">
+        <g opacity=".6" clip-path="url(#a)">
+          <path d="M10.85 9.413 8.62 7.74V4.332a.62.62 0 1 0-1.24 0V8.05c0 .195.092.379.248.495l2.479 1.86a.616.616 0 0 0 .867-.125.619.619 0 0 0-.123-.867Z" />
+          <path d="M8 0C3.589 0 0 3.589 0 8c0 4.412 3.589 8 8 8 4.412 0 8-3.588 8-8 0-4.411-3.588-8-8-8Zm0 14.76A6.769 6.769 0 0 1 1.24 8 6.769 6.769 0 0 1 8 1.24 6.769 6.769 0 0 1 14.76 8 6.77 6.77 0 0 1 8 14.76Z" />
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 16 16" id="icon-copy" xmlns="http://www.w3.org/2000/svg">
+        <g opacity=".6" clip-path="url(#a)">
+          <path d="M5.846.667a1.852 1.852 0 0 0-1.647 1.02.667.667 0 0 0 1.154.667.495.495 0 0 1 .491-.356h7.644c.295 0 .511.217.511.513v7.643a.491.491 0 0 1-.332.481.665.665 0 0 0-.268.925.668.668 0 0 0 .936.23c.59-.308.998-.93.998-1.636V2.511A1.854 1.854 0 0 0 13.489.667H5.846ZM2.512 4.002c-1.01 0-1.846.832-1.846 1.842v7.645c0 1.012.836 1.843 1.846 1.843h7.642a1.854 1.854 0 0 0 1.847-1.843V5.845c0-1.01-.835-1.841-1.847-1.841l-7.642-.002Zm0 1.33h7.642c.296 0 .513.217.513.512v7.645a.498.498 0 0 1-.513.513H2.512a.498.498 0 0 1-.511-.513V5.845c0-.294.216-.511.511-.511v-.001Z" />
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 16 16" id="icon-worms" xmlns="http://www.w3.org/2000/svg">
+        <path opacity=".8" d="M11.794 4.744C10.189 3.52 9.369 2.77 8.036 1.255A.71.71 0 0 0 7.502 1a.714.714 0 0 0-.534.255C5.635 2.771 4.815 3.52 3.21 4.744 1.114 6.343.03 9.469 2.146 11.338c1.475 1.304 3.254 1.212 4.672-.017-.574 1.18-1.034 2.287-1.684 3.302-.215.338-.123.45.258.33a7.18 7.18 0 0 1 2.108-.3c.775 0 1.5.111 2.107.3.381.12.475.007.258-.33-.65-1.016-1.11-2.124-1.684-3.302 1.418 1.23 3.198 1.32 4.672.017 2.117-1.87 1.033-4.995-1.064-6.594h.005Z" />
+      </symbol>
+      <symbol viewBox="0 0 13 13" id="star" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.813.563c.28-.563 1.078-.54 1.335 0L8.695 3.68l3.422.492c.61.094.844.844.399 1.289l-2.461 2.414.586 3.398c.093.61-.563 1.079-1.102.797l-3.047-1.617-3.07 1.617c-.54.282-1.195-.187-1.102-.797l.586-3.398-2.46-2.414C0 5.016.233 4.266.843 4.17l3.445-.491L5.813.562Z" />
+      </symbol>
+    </svg></div>
+  <!-- Hero -->
+  <section class="hero-casino">
+    <div class="hero-casino__container container">
+      <div class="hero-casino__left">
+        <h1 class="hero-casino__title">
+          <span class="hero-casino__title-accent">Best Arab</span>
+          <span class="hero-casino__title-highlight">Casinos Online 2026's</span>
+        </h1>
+        <ul class="hero-casino__features">
+          <li class="hero-casino__feature">
+            <span class="hero-casino__feature-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24">
+              <use href="#icon-worms"></use>
+            </svg>
+          </span>
+            <span class="hero-casino__feature-text">Compare Top Casinos</span>
+          </li>
+          <li class="hero-casino__feature">
+            <span class="hero-casino__feature-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24">
+              <use href="#icon-worms"></use>
+            </svg>
+          </span>
+            <span class="hero-casino__feature-text">Unlock Exclusive Bonuses</span>
+          </li>
+          <li class="hero-casino__feature">
+            <span class="hero-casino__feature-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24">
+              <use href="#icon-worms"></use>
+            </svg>
+          </span>
+            <span class="hero-casino__feature-text">Play Safe & Fast</span>
+          </li>
+        </ul>
+        <a class="hero-casino__button" href="#">Get Today Bonus</a>
+      </div>
+      <div class="hero-casino__center">
+        <div class="hero-casino__character js-tilt">
+          <img class="hero-casino__image" src="img/hero-image.png" alt="Arabic player on crescent moon" loading="eager" fetchpriority="high" />
+        </div>
+      </div>
+      <div class="hero-casino__right">
+        <ol class="offer-list">
+          <li class="offer-list__item">
+            <article class="offer-card">
+              <div class="offer-card__body offer-card__body--vertical">
+                <div class="offer-card__logo">
+                  <img src="img/logo/logo-stake.png" alt="Stake US" width="51" height="30" class="offer-card__logo-img" />
+                </div>
+                <h3 class="offer-card__title">Stake US</h3>
+                <div class="offer-card__content">
+                  <span class="offer-card__tag">No Deposit Bonus</span>
+                  <p class="offer-card__desc">55 Stake Coins & 550k Gold Coins</p>
+                </div>
+                <a href="#" class="offer-card__btn" rel="nofollow sponsored">Claim</a>
+              </div>
+              <p class="offer-card__desc offer-card__desc--bottom">
+                Sign up with the code NEWBONUS. When you verify your account get 25 Stake Cash for
+                free PLUS 250,000 Gold Coins and 5% Rakeback! No deposit required. 18+ only.
+                T&amp;Cs apply.
+              </p>
+            </article>
+          </li>
+          <li class="offer-list__item">
+            <article class="offer-card">
+              <div class="offer-card__body offer-card__body--vertical">
+                <div class="offer-card__logo">
+                  <img src="img/logo/logo-stake.png" alt="Stake US" width="51" height="30" class="offer-card__logo-img" />
+                </div>
+                <h3 class="offer-card__title">Stake US</h3>
+                <div class="offer-card__content">
+                  <span class="offer-card__tag">No Deposit Bonus</span>
+                  <p class="offer-card__desc">55 Stake Coins & 550k Gold Coins</p>
+                </div>
+                <a href="#" class="offer-card__btn" rel="nofollow sponsored">Claim</a>
+              </div>
+              <p class="offer-card__desc offer-card__desc--bottom">
+                Sign up with the code NEWBONUS. When you verify your account get 25 Stake Cash for
+                free PLUS 250,000 Gold Coins and 5% Rakeback! No deposit required. 18+ only.
+                T&amp;Cs apply.
+              </p>
+            </article>
+          </li>
+          <li class="offer-list__item">
+            <article class="offer-card">
+              <div class="offer-card__body offer-card__body--vertical">
+                <div class="offer-card__logo">
+                  <img src="img/logo/logo-stake.png" alt="Stake US" width="51" height="30" class="offer-card__logo-img" style="object-fit: contain" />
+                </div>
+                <h3 class="offer-card__title">Stake US</h3>
+                <div class="offer-card__content">
+                  <span class="offer-card__tag">No Deposit Bonus</span>
+                  <p class="offer-card__desc">55 Stake Coins & 550k Gold Coins</p>
+                </div>
+                <a href="#" class="offer-card__btn" rel="nofollow sponsored">Claim</a>
+              </div>
+              <p class="offer-card__desc offer-card__desc--bottom">
+                Sign up with the code NEWBONUS. When you verify your account get 25 Stake Cash for
+                free PLUS 250,000 Gold Coins and 5% Rakeback! No deposit required. 18+ only.
+                T&amp;Cs apply.
+              </p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- Category Tabs -->
+  <nav class="category-tabs container" aria-label="Casino categories">
+    <div class="category-tabs__carousel">
+      <div class="category-tabs__slider swiper">
+        <ul class="category-tabs__list swiper-wrapper">
+          <li class="category-tabs__item swiper-slide">
+            <a class="category-tabs__link" href="/best-online-casinos/" title="Best Online Casinos">
+              <div class="category-tabs__content">
+                <span class="category-tabs__title">Best Online Casinos</span>
+                <div class="category-tabs__meta">
+                  <span class="category-tabs__score">667/100</span>
+                  <span class="category-tabs__city">Sheffield...</span>
+                </div>
+              </div>
+              <span class="category-tabs__icon" aria-hidden="true">
+            <img
+              src="img/cards/card-1.png"
+              alt="Best Online Casinos"
+              width="70"
+              height="57"
+              loading="lazy"
+            />
+          </span>
+            </a>
+          </li>
+          <li class="category-tabs__item swiper-slide">
+            <a class="category-tabs__link" href="/best-bookmakers/" title="Best Bookmakers">
+              <div class="category-tabs__content">
+                <span class="category-tabs__title">Best Bookmakers</span>
+                <div class="category-tabs__meta">
+                  <span class="category-tabs__score">667/100</span>
+                  <span class="category-tabs__city">Sheffield...</span>
+                </div>
+              </div>
+              <span class="category-tabs__icon" aria-hidden="true">
+            <img
+              src="img/cards/card-2.png"
+              alt="Best Bookmakers"
+              width="70"
+              height="57"
+              loading="lazy"
+            />
+          </span>
+            </a>
+          </li>
+          <li class="category-tabs__item swiper-slide">
+            <a class="category-tabs__link" href="/best-crypto-casinos/" title="Best Crypto Casinos">
+              <div class="category-tabs__content">
+                <span class="category-tabs__title">Best Crypto Casinos</span>
+                <div class="category-tabs__meta">
+                  <span class="category-tabs__score">667/100</span>
+                  <span class="category-tabs__city">Sheffield ...</span>
+                </div>
+              </div>
+              <span class="category-tabs__icon" aria-hidden="true">
+            <img
+              src="img/cards/card-3.png"
+              alt="Best Crypto Casinos"
+              width="70"
+              height="57"
+              loading="lazy"
+            />
+          </span>
+            </a>
+          </li>
+          <li class="category-tabs__item swiper-slide">
+            <a class="category-tabs__link category-tabs__link--active category-tabs__link--highlight" href="/best-games/" title="Best Games" aria-current="page">
+              <div class="category-tabs__content">
+                <span class="category-tabs__title">Best Games</span>
+                <div class="category-tabs__meta">
+                  <span class="category-tabs__score">667/100</span>
+                  <span class="category-tabs__city">Sheffield...</span>
+                </div>
+              </div>
+              <span class="category-tabs__icon" aria-hidden="true">
+            <img
+              src="img/cards/card-4.png"
+              alt="Best Games"
+              width="70"
+              height="57"
+              loading="lazy"
+            />
+          </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Feature -->
+  <section class="features container">
+    <div class="features__header">
+      <h2 class="features__header-title"><span>Hottest</span> Online Casinos</h2>
+      <p>Morbi id augue id justo pulvinar elementum</p>
+    </div>
+    <div class="features__content">
+      <p>
+        Cras in nisi id turpis cursus vulputate. Aliquam at sapien non tellus congue efficitur. Nam
+        scelerisque quam quis <a href="#">link</a> turpis pellentesque, in placerat erat laoreet.
+        Integer porttitor malesuada ante, nec aliquet dui pellentesque sit amet. Fusce non pretium
+        lacus, id malesuada dui.
+      </p>
+      <p>
+        Aliquam sapien ex, finibus ut interdum a, varius hendrerit felis. Ut lobortis lorem sit amet
+        dolor sagittis, vel blandit massa porttitor. Aliquam erat volutpat. Duis tincidunt, turpis ut
+        porta malesuada.
+      </p>
+      <ul>
+        <li>
+          Cras in nisi id turpis cursus vulputate. Aliquam at sapien non tellus congue efficitur. Nam
+          scelerisque quam quis turpis pellentesque, in placerat erat laoreet.Integer porttitor
+          malesuada ante, nec aliquet dui pellentesque sit amet.
+        </li>
+        <li>
+          Praesent magna lacus, faucibus ac sapien vel, efficitur ullamcorper ipsum. Maecenas varius
+          risus at ipsum hendrerit, non aliquet sem scelerisque. Vestibulum vel augue eget nibh
+          laoreet facilisis ut ultricies sapien. Aliquam sit amet velit egestas, ultrices lacus ut,
+          elementum sapien.
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- Special Ofert -->
+  <section class="special-ofert">
+    <div class="special-ofert__container container">
+      <div class="special-ofert__decor special-ofert__decor--left" aria-hidden="true">
+        <img class="special-ofert__decor-character" src="img/decor-1.png" alt="" />
+      </div>
+      <div class="special-ofert__decor special-ofert__decor--right" aria-hidden="true">
+        <img class="special-ofert__decor-elements" src="img/decor-2.png" alt="" />
+      </div>
+      <div class="special-ofert__main">
+        <div class="special-ofert__filters" role="tablist" aria-label="Фильтры офферов">
+          <button class="special-ofert__filter special-ofert__filter--active" type="button" data-filter="all">
+            All
+          </button>
+          <button class="special-ofert__filter" type="button" data-filter="decentralized">
+            Decentralized
+          </button>
+          <button class="special-ofert__filter" type="button" data-filter="derivatives">
+            Derivatives
+          </button>
+          <button class="special-ofert__filter" type="button" data-filter="spot">Spot</button>
+        </div>
+        <ul class="special-ofert__list">
+          <li class="special-ofert__item">
+            <article class="special-ofert__card" data-type="decentralized">
+              <div class="special-ofert__card-header">
+                <div class="special-ofert__card-logo-wrap">
+                  <img class="special-ofert__card-logo" src="img/logo/logo-tower.png" alt="Venus Trading" width="51" height="30" />
+                  <h3 class="special-ofert__card-title">Venus Trading</h3>
+                </div>
+              </div>
+              <div class="special-ofert__card-body">
+                <div class="special-ofert__card-metric">
+                  <span class="special-ofert__card-value">380+</span>
+                  <span class="special-ofert__card-label">Cryptocurrencies Available for Trade</span>
+                </div>
+                <div class="special-ofert__card-bonus">
+                  <span class="special-ofert__card-bonus-title">Get up to a $250 bonus!</span>
+                  <span class="special-ofert__card-bonus-note">For new users only</span>
+                </div>
+                <div class="special-ofert__card-rating">
+                  <span class="special-ofert__card-rating-row">
+                  <span class="special-ofert__card-star-wrap">
+                    <svg class="special-ofert__card-star" aria-hidden="true">
+                      <use href="#star"></use>
+                    </svg>
+                  </span>
+                  <span class="special-ofert__card-value"
+                    ><span>4.9</span><span>/5</span></span></span>
+                  <a class="special-ofert__card-link" href="#">Read Review</a>
+                </div>
+                <div class="special-ofert__card-cta">
+                  <a class="special-ofert__card-btn" href="#" target="_blank" rel="noopener">Visit</a>
+                </div>
+              </div>
+            </article>
+            <p class="special-ofert__card-desc">
+              The exchange provides you with a platform that matches your trades with open orders from
+              other users of our services at your direction. Users are not able to predetermine a
+              trade with a particular user or with a particular account. Additionally, an order may be
+              partially filled or may be filled by multiple matching orders.
+            </p>
+          </li>
+          <li class="special-ofert__item">
+            <article class="special-ofert__card" data-type="decentralized">
+              <div class="special-ofert__card-header">
+                <div class="special-ofert__card-logo-wrap">
+                  <img class="special-ofert__card-logo" src="img/logo/logo-tower.png" alt="Venus Trading" width="51" height="30" />
+                  <h3 class="special-ofert__card-title">Venus Trading</h3>
+                </div>
+              </div>
+              <div class="special-ofert__card-body">
+                <div class="special-ofert__card-metric">
+                  <span class="special-ofert__card-value">380+</span>
+                  <span class="special-ofert__card-label">Cryptocurrencies Available for Trade</span>
+                </div>
+                <div class="special-ofert__card-bonus">
+                  <span class="special-ofert__card-bonus-title">Get up to a $250 bonus!</span>
+                  <span class="special-ofert__card-bonus-note">For new users only</span>
+                </div>
+                <div class="special-ofert__card-rating">
+                  <span class="special-ofert__card-rating-row">
+                  <span class="special-ofert__card-star-wrap">
+                    <svg class="special-ofert__card-star" aria-hidden="true">
+                      <use href="#star"></use>
+                    </svg>
+                  </span>
+                  <span class="special-ofert__card-value"
+                    ><span>4.9</span><span>/5</span></span></span>
+                  <a class="special-ofert__card-link" href="#">Read Review</a>
+                </div>
+                <div class="special-ofert__card-cta">
+                  <a class="special-ofert__card-btn" href="#" target="_blank" rel="noopener">Visit</a>
+                </div>
+              </div>
+            </article>
+            <p class="special-ofert__card-desc">
+              The exchange provides you with a platform that matches your trades with open orders from
+              other users of our services at your direction. Users are not able to predetermine a
+              trade with a particular user or with a particular account. Additionally, an order may be
+              partially filled or may be filled by multiple matching orders.
+            </p>
+          </li>
+          <li class="special-ofert__item">
+            <article class="special-ofert__card" data-type="decentralized">
+              <div class="special-ofert__card-header">
+                <div class="special-ofert__card-logo-wrap">
+                  <img class="special-ofert__card-logo" src="img/logo/logo-tower.png" alt="Venus Trading" width="51" height="30" />
+                  <h3 class="special-ofert__card-title">Venus Trading</h3>
+                </div>
+              </div>
+              <div class="special-ofert__card-body">
+                <div class="special-ofert__card-metric">
+                  <span class="special-ofert__card-value">380+</span>
+                  <span class="special-ofert__card-label">Cryptocurrencies Available for Trade</span>
+                </div>
+                <div class="special-ofert__card-bonus">
+                  <span class="special-ofert__card-bonus-title">Get up to a $250 bonus!</span>
+                  <span class="special-ofert__card-bonus-note">For new users only</span>
+                </div>
+                <div class="special-ofert__card-rating">
+                  <span class="special-ofert__card-rating-row">
+                  <span class="special-ofert__card-star-wrap">
+                    <svg class="special-ofert__card-star" aria-hidden="true">
+                      <use href="#star"></use>
+                    </svg>
+                  </span>
+                  <span class="special-ofert__card-value"
+                    ><span>4.9</span><span>/5</span></span></span>
+                  <a class="special-ofert__card-link" href="#">Read Review</a>
+                </div>
+                <div class="special-ofert__card-cta">
+                  <a class="special-ofert__card-btn" href="#" target="_blank" rel="noopener">Visit</a>
+                </div>
+              </div>
+            </article>
+            <p class="special-ofert__card-desc">
+              The exchange provides you with a platform that matches your trades with open orders from
+              other users of our services at your direction. Users are not able to predetermine a
+              trade with a particular user or with a particular account. Additionally, an order may be
+              partially filled or may be filled by multiple matching orders.
+            </p>
+          </li>
+        </ul>
+        <footer class="special-ofert__footer">
+          <p class="special-ofert__text">
+            Cras in nisi id turpis cursus vulputate. Aliquam at sapien non tellus congue efficitur.
+            Nam scelerisque quam quis turpis pellentesque, in placerat erat laoreet. Integer porttitor
+            malesuada ante, nec aliquet dui pellentesque sit amet.
+          </p>
+          <a class="special-ofert__more" href="#">See more</a>
+        </footer>
+      </div>
+    </div>
+  </section>
+  <!-- Hottest Games -->
+  <section class="hottest-games">
+    <div class="hottest-games__character hottest-games__character--left" aria-hidden="true">
+      <img src="img/games-decor-1.png" alt="" />
+    </div>
+    <div class="hottest-games__character hottest-games__character--right" aria-hidden="true">
+      <img src="img/games-decor-2.png" alt="" />
+    </div>
+    <div class="hottest-games__inner container">
+      <div class="hottest-games__content">
+        <h2 class="hottest-games__title">Hottest Games</h2>
+        <p class="hottest-games__subtitle">Morbi id augue id justo pulvinar elementum</p>
+        <p class="hottest-games__intro">
+          Cras in nisi id turpis cursus vulputate. Aliquam at sapien non tellus congue efficitur. Nam
+          scelerisque quam quis <a href="#">link</a> turpis pellentesque, in placerat erat laoreet.
+          Integer porttitor malesuada ante, nec aliquet dui pellentesque sit amet. Fusce non pretium
+          lacus, id malesuada.
+        </p>
+        <div class="hottest-games__carousel">
+          <div class="swiper-button-prev hottest-games__arrow hottest-games__arrow--prev" aria-label="Previous">
+            <img src="img/svg/icon-arrow-left.svg" alt="" width="40" height="40" aria-hidden="true" />
+          </div>
+          <div class="swiper-button-next hottest-games__arrow hottest-games__arrow--next" aria-label="Next">
+            <img src="img/svg/icon-arrow-right.svg" alt="" width="40" height="40" aria-hidden="true" />
+          </div>
+          <div class="swiper hottest-games__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="hottest-games__game">
+                  <img src="img/games/1.png" alt="Gerard's Gambit" class="hottest-games__game-img" />
+                  <span class="hottest-games__game-title">Gerard's Gambit</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="hottest-games__game">
+                  <img src="img/games/2.png" alt="Gonzo's Quest" class="hottest-games__game-img" />
+                  <span class="hottest-games__game-title">Gonzo's Quest</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="hottest-games__game">
+                  <img src="img/games/3.png" alt="Moon Princess" class="hottest-games__game-img" />
+                  <span class="hottest-games__game-title">Moon Princess</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="hottest-games__game">
+                  <img src="img/games/4.png" alt="Gonzo's Quest" class="hottest-games__game-img" />
+                  <span class="hottest-games__game-title">Gonzo's Quest</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="hottest-games__game">
+                  <img src="img/games/5.png" alt="Game" class="hottest-games__game-img" />
+                  <span class="hottest-games__game-title"
+                  >Cat Wilde and the dssdfsdfdsfsdfdsfdsf</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="hottest-games__game">
+                  <img src="img/games/6.png" alt="Game" class="hottest-games__game-img" />
+                  <span class="hottest-games__game-title">Mega Fortune</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hottest-games__text">
+          <p>
+            Sed mauris libero, pretium consectetur cursus eu, blandit at arcu. Morbi justo turpis,
+            vulputate et elementum non, dapibus at ante. Morbi id augue id justo pulvinar elementum.
+            Donec volutpat quam quis porta maximus.
+          </p>
+          <p>
+            Cras in nisi id turpis cursus vulputate. Aliquam at sapien non tellus congue efficitur.
+            Nam scelerisque quam quis turpis pellentesque, in placerat erat laoreet. Integer porttitor
+            malesuada ante, nec aliquet dui pellentesque sit amet. Fusce non pretium lacus, id
+            malesuada dui.
+          </p>
+          <p>
+            *Sed hendrerit libero eros, ut faucibus ante pulvinar in. Integer erat sem, aliquam at
+            eros sed, gravida lobortis elit. Suspendisse metus sem, dignissim et eleifend a, malesuada
+            vel tortor. Nulla sit amet velit quis tellus convallis facilisis a et mi. Donec luctus,
+            arcu in accumsan auctor, ligula ante dictum lectus, lobortis pellentesque tellus magna
+            quis felis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Top Bonus -->
+  <section class="top-bonus container">
+    <h2 class="top-bonus__title">
+      Top Bonus
+    </h2>
+    <p class="top-bonus__subtitle">Morbi id augue id justo pulvinar elementum</p>
+    <div class="top-bonus__items">
+      <article class="top-bonus__card">
+        <div class="top-bonus__card-header">
+          <img src="img/btc-bonus.png" alt="BTC Bonus" width="100" height="100" />
+          <div class="top-bonus__card-content">
+            <div class="top-bonus__card-tag">
+              <svg width="16" height="16" fill="currentColor" class="top-bonus__card-tag-icon" aria-hidden="true">
+                <use href="#icon-cashback"></use>
+              </svg>
+              <span class="top-bonus__card-tag-text">Cashback</span>
+            </div>
+            <h3 class="top-bonus__card-title">Get Up to $75 in BTC</h3>
+            <button class="top-bonus__card-btn">Claim $75</button>
+          </div>
+        </div>
+        <p class="top-bonus__card-desc">
+          No Professional or Investment Advice. You alone are solely responsible for determining
+          whether any investment, security or strategy, or any other product or service is appropriate
+          or suitable for you based on your investment objectives and personal and financial
+          situation.
+        </p>
+      </article>
+      <article class="top-bonus__card">
+        <div class="top-bonus__card-header">
+          <img src="img/btc-bonus.png" alt="BTC Bonus" width="100" height="100" />
+          <div class="top-bonus__card-content">
+            <div class="top-bonus__card-tag">
+              <svg width="16" height="16" fill="currentColor" class="top-bonus__card-tag-icon" aria-hidden="true">
+                <use href="#icon-cashback"></use>
+              </svg>
+              <span class="top-bonus__card-tag-text">Cashback</span>
+            </div>
+            <h3 class="top-bonus__card-title">Get Up to $75 in BTC</h3>
+            <button class="top-bonus__card-btn">Claim $75</button>
+          </div>
+        </div>
+        <p class="top-bonus__card-desc">
+          No Professional or Investment Advice. You alone are solely responsible for determining
+          whether any investment, security or strategy, or any other product or service is appropriate
+          or suitable for you based on your investment objectives and personal and financial
+          situation.
+        </p>
+      </article>
+      <article class="top-bonus__card">
+        <div class="top-bonus__card-header">
+          <img src="img/btc-bonus.png" alt="BTC Bonus" width="100" height="100" />
+          <div class="top-bonus__card-content">
+            <div class="top-bonus__card-tag">
+              <svg width="16" height="16" fill="currentColor" class="top-bonus__card-tag-icon" aria-hidden="true">
+                <use href="#icon-cashback"></use>
+              </svg>
+              <span class="top-bonus__card-tag-text">Cashback</span>
+            </div>
+            <h3 class="top-bonus__card-title">Get Up to $75 in BTC</h3>
+            <button class="top-bonus__card-btn">Claim $75</button>
+          </div>
+        </div>
+        <p class="top-bonus__card-desc">
+          No Professional or Investment Advice. You alone are solely responsible for determining
+          whether any investment, security or strategy, or any other product or service is appropriate
+          or suitable for you based on your investment objectives and personal and financial
+          situation.
+        </p>
+      </article>
+      <article class="top-bonus__card">
+        <div class="top-bonus__card-header">
+          <img src="img/btc-bonus.png" alt="BTC Bonus" width="100" height="100" />
+          <div class="top-bonus__card-content">
+            <div class="top-bonus__card-tag">
+              <svg width="16" height="16" fill="currentColor" class="top-bonus__card-tag-icon" aria-hidden="true">
+                <use href="#icon-cashback"></use>
+              </svg>
+              <span class="top-bonus__card-tag-text">Cashback</span>
+            </div>
+            <h3 class="top-bonus__card-title">Get Up to $75 in BTC</h3>
+            <button class="top-bonus__card-btn">Claim $75</button>
+          </div>
+        </div>
+        <p class="top-bonus__card-desc">
+          No Professional or Investment Advice. You alone are solely responsible for determining
+          whether any investment, security or strategy, or any other product or service is appropriate
+          or suitable for you based on your investment objectives and personal and financial
+          situation.
+        </p>
+      </article>
+      <article class="top-bonus__card">
+        <div class="top-bonus__card-header">
+          <img src="img/btc-bonus.png" alt="BTC Bonus" width="100" height="100" />
+          <div class="top-bonus__card-content">
+            <div class="top-bonus__card-tag">
+              <svg width="16" height="16" fill="currentColor" class="top-bonus__card-tag-icon" aria-hidden="true">
+                <use href="#icon-cashback"></use>
+              </svg>
+              <span class="top-bonus__card-tag-text">Cashback</span>
+            </div>
+            <h3 class="top-bonus__card-title">Get Up to $75 in BTC</h3>
+            <button class="top-bonus__card-btn">Claim $75</button>
+          </div>
+        </div>
+        <p class="top-bonus__card-desc">
+          No Professional or Investment Advice. You alone are solely responsible for determining
+          whether any investment, security or strategy, or any other product or service is appropriate
+          or suitable for you based on your investment objectives and personal and financial
+          situation.
+        </p>
+      </article>
+      <article class="top-bonus__card">
+        <div class="top-bonus__card-header">
+          <img src="img/btc-bonus.png" alt="BTC Bonus" width="100" height="100" />
+          <div class="top-bonus__card-content">
+            <div class="top-bonus__card-tag">
+              <svg width="16" height="16" fill="currentColor" class="top-bonus__card-tag-icon" aria-hidden="true">
+                <use href="#icon-cashback"></use>
+              </svg>
+              <span class="top-bonus__card-tag-text">Cashback</span>
+            </div>
+            <h3 class="top-bonus__card-title">Get Up to $75 in BTC</h3>
+            <button class="top-bonus__card-btn">Claim $75</button>
+          </div>
+        </div>
+        <p class="top-bonus__card-desc">
+          No Professional or Investment Advice. You alone are solely responsible for determining
+          whether any investment, security or strategy, or any other product or service is appropriate
+          or suitable for you based on your investment objectives and personal and financial
+          situation.
+        </p>
+      </article>
+    </div>
+    <a href="#" class="top-bonus__link">&laquo; See all &raquo;</a>
+  </section>
+  <!-- Last Review -->
+  <section class="last-review container">
+    <h2 class="last-review__title">Last Review</h2>
+    <div class="last-review__grid">
+      <article class="last-review__card">
+        <div class="last-review__card-image-wrap">
+          <img class="last-review__card-image" src="img/review-1.png" alt="" width="280" height="180" />
+          <span class="last-review__card-tag">Blockchain News</span>
+        </div>
+        <h3 class="last-review__card-title">
+          Native Token Transfers Are the Next Evolution of Interoperability
+        </h3>
+        <p class="last-review__card-desc">
+          Aliquam sapien ex, finibus ut interdum a, varius hendrerit felis. Ut lobortis lorem sit amet
+          dolor sagittis, vel blandit massa sodales.
+        </p>
+      </article>
+      <article class="last-review__card">
+        <div class="last-review__card-image-wrap">
+          <img class="last-review__card-image" src="img/review-1.png" alt="" width="280" height="180" />
+          <span class="last-review__card-tag">Blockchain News</span>
+        </div>
+        <h3 class="last-review__card-title">
+          Native Token Transfers Are the Next Evolution of Interoperability
+        </h3>
+        <p class="last-review__card-desc">
+          Aliquam sapien ex, finibus ut interdum a, varius hendrerit felis. Ut lobortis lorem sit amet
+          dolor sagittis, vel blandit massa sodales.
+        </p>
+      </article>
+      <article class="last-review__card">
+        <div class="last-review__card-image-wrap">
+          <img class="last-review__card-image" src="img/review-1.png" alt="" width="280" height="180" />
+          <span class="last-review__card-tag">Blockchain News</span>
+        </div>
+        <h3 class="last-review__card-title">
+          Native Token Transfers Are the Next Evolution of Interoperability
+        </h3>
+        <p class="last-review__card-desc">
+          Aliquam sapien ex, finibus ut interdum a, varius hendrerit felis. Ut lobortis lorem sit amet
+          dolor sagittis, vel blandit massa sodales.
+        </p>
+      </article>
+      <article class="last-review__card">
+        <div class="last-review__card-image-wrap">
+          <img class="last-review__card-image" src="img/review-1.png" alt="" width="280" height="180" />
+          <span class="last-review__card-tag">Blockchain News</span>
+        </div>
+        <h3 class="last-review__card-title">
+          Native Token Transfers Are the Next Evolution of Interoperability
+        </h3>
+        <p class="last-review__card-desc">
+          Aliquam sapien ex, finibus ut interdum a, varius hendrerit felis. Ut lobortis lorem sit amet
+          dolor sagittis, vel blandit massa sodales.
+        </p>
+      </article>
+    </div>
+    <a class="last-review__link" href="#">&laquo; See all &raquo;</a>
+    <div class="last-review__text">
+      <p>
+        Cras in nisi id turpis cursus vulputate. Aliquam at sapien non tellus congue efficitur. Nam
+        scelerisque quam quis <a href="#">link</a> turpis pellentesque, in placerat erat laoreet.
+        Integer porttitor malesuada ante, nec aliquet dui pellentesque sit amet. Fusce non pretium
+        lacus, id malesuada.
+      </p>
+      <p>
+        Cras in nisi id turpis cursus vulputate. Aliquam at sapien non tellus congue efficitur. Nam
+        scelerisque quam quis <a href="#">link</a> turpis pellentesque, in placerat erat laoreet.
+        Integer porttitor malesuada ante, nec aliquet dui pellentesque sit amet. Fusce non pretium
+        lacus, id malesuada.
+      </p>
+      <p>
+        Cras in nisi id turpis cursus vulputate. Aliquam at sapien non tellus congue efficitur. Nam
+        scelerisque quam quis <a href="#">link</a> turpis pellentesque, in placerat erat laoreet.
+        Integer porttitor malesuada ante, nec aliquet dui pellentesque sit amet. Fusce non pretium
+        lacus, id malesuada.
+      </p>
+      <a class="last-review__more" href="#">See more</a>
+    </div>
+  </section>
+  <!-- Arabian Gambler -->
+  <section class="arabian-gambler container">
+    <div class="arabian-gambler__grid">
+      <div class="arabian-gambler__card arabian-gambler__card--main">
+        <div class="arabian-gambler__col arabian-gambler__col--text">
+          <h2 class="arabian-gambler__title">Arabian Gambler</h2>
+          <p class="arabian-gambler__desc">
+            Unbiased online casino reviews and free demo games. Each player can leave detailed
+            feedback or create a conversation by collecting responses from other players. Use our
+            ChatBot
+          </p>
+          <a class="arabian-gambler__btn" href="#">ChatBot</a>
+        </div>
+        <img class="arabian-gambler__character" src="img/character-girl2.png" alt="Arabian character" width="280" height="400" />
+      </div>
+      <div class="arabian-gambler__card arabian-gambler__card--live">
+        <ul class="arabian-gambler__events-list" id="arabian-events"></ul>
+        <span class="arabian-gambler__live-badge">
+        <span class="arabian-gambler__live-dot" aria-hidden="true"></span>
+        LIVE
+        </span>
+      </div>
+    </div>
+  </section>
+  <!-- Partners -->
+  <section class="partners container">
+    <h2 class="partners__title">Partners</h2>
+    <div class="partners__box">
+      <img src="img/partners/1.png" alt="Bet442" />
+      <img src="img/partners/2.png" alt="666CASINO" />
+      <img src="img/partners/3.png" alt="Luckster Sport" />
+      <img src="img/partners/4.png" alt="King Casino" />
+      <img src="img/partners/5.png" alt="mr.play" />
+      <img src="img/partners/6.png" alt="HEYSPIN" />
+      <img src="img/partners/7.png" alt="ZETBET" />
+    </div>
+  </section>
+  <!-- Bonus Offers -->
+  <section class="bonus-offers container">
+    <div class="bonus-offers__tabs">
+      <button class="bonus-offers__tab bonus-offers__tab--active" type="button">All</button>
+      <button class="bonus-offers__tab" type="button">Decentralized</button>
+      <button class="bonus-offers__tab" type="button">Derivatives</button>
+      <button class="bonus-offers__tab" type="button">Spot</button>
+    </div>
+    <div class="bonus-offers__slider swiper">
+      <div class="swiper-wrapper">
+        <article class="bonus-offers__card swiper-slide">
+          <div class="bonus-offers__card-tag">
+            <svg width="16" height="16" fill="currentColor" aria-hidden="true">
+              <use href="#icon-cashback"></use>
+            </svg>
+            Cashback
+          </div>
+          <h3 class="bonus-offers__card-title">Get up to a $250 bonus!</h3>
+          <div class="bonus-offers__card-code">
+            <span class="bonus-offers__card-code-value">75BTCNOW</span>
+            <span class="bonus-offers__card-code-label">Bonus Code</span>
+            <button class="bonus-offers__card-copy" type="button" aria-label="Copy">
+              <svg class="bonus-offers__card-copy-icon bonus-offers__card-copy-icon--copy" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <use href="#icon-copy"></use>
+              </svg>
+              <svg class="bonus-offers__card-copy-icon bonus-offers__card-copy-icon--check" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4l-8 8-4-4" />
+              </svg>
+            </button>
+          </div>
+          <p class="bonus-offers__card-desc">
+            Sign up with our referral code, make the first transfer of $500 or more, and hold for 30 days
+            to receive $75 in Bitcoin!
+          </p>
+          <button class="bonus-offers__card-btn" type="button">Claim $75</button>
+        </article>
+        <article class="bonus-offers__card swiper-slide">
+          <div class="bonus-offers__card-tag">
+            <svg width="16" height="16" fill="currentColor" aria-hidden="true">
+              <use href="#icon-cashback"></use>
+            </svg>
+            Cashback
+          </div>
+          <h3 class="bonus-offers__card-title">Get up to a $250 bonus!</h3>
+          <div class="bonus-offers__card-code">
+            <span class="bonus-offers__card-code-value">75BTCNOW</span>
+            <span class="bonus-offers__card-code-label">Bonus Code</span>
+            <button class="bonus-offers__card-copy" type="button" aria-label="Copy">
+              <svg class="bonus-offers__card-copy-icon bonus-offers__card-copy-icon--copy" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <use href="#icon-copy"></use>
+              </svg>
+              <svg class="bonus-offers__card-copy-icon bonus-offers__card-copy-icon--check" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4l-8 8-4-4" />
+              </svg>
+            </button>
+          </div>
+          <p class="bonus-offers__card-desc">
+            Sign up with our referral code, make the first transfer of $500 or more, and hold for 30 days
+            to receive $75 in Bitcoin!
+          </p>
+          <button class="bonus-offers__card-btn" type="button">Claim $75</button>
+        </article>
+        <article class="bonus-offers__card swiper-slide">
+          <div class="bonus-offers__card-tag">
+            <svg width="16" height="16" fill="currentColor" aria-hidden="true">
+              <use href="#icon-cashback"></use>
+            </svg>
+            Cashback
+          </div>
+          <h3 class="bonus-offers__card-title">Get up to a $250 bonus!</h3>
+          <div class="bonus-offers__card-code">
+            <span class="bonus-offers__card-code-value">75BTCNOW</span>
+            <span class="bonus-offers__card-code-label">Bonus Code</span>
+            <button class="bonus-offers__card-copy" type="button" aria-label="Copy">
+              <svg class="bonus-offers__card-copy-icon bonus-offers__card-copy-icon--copy" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <use href="#icon-copy"></use>
+              </svg>
+              <svg class="bonus-offers__card-copy-icon bonus-offers__card-copy-icon--check" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4l-8 8-4-4" />
+              </svg>
+            </button>
+          </div>
+          <p class="bonus-offers__card-desc">
+            Sign up with our referral code, make the first transfer of $500 or more, and hold for 30 days
+            to receive $75 in Bitcoin!
+          </p>
+          <button class="bonus-offers__card-btn" type="button">Claim $75</button>
+        </article>
+        <article class="bonus-offers__card swiper-slide">
+          <div class="bonus-offers__card-tag">
+            <svg width="16" height="16" fill="currentColor" aria-hidden="true">
+              <use href="#icon-cashback"></use>
+            </svg>
+            Cashback
+          </div>
+          <h3 class="bonus-offers__card-title">Get up to a $250 bonus!</h3>
+          <div class="bonus-offers__card-code">
+            <span class="bonus-offers__card-code-value">75BTCNOW</span>
+            <span class="bonus-offers__card-code-label">Bonus Code</span>
+            <button class="bonus-offers__card-copy" type="button" aria-label="Copy">
+              <svg class="bonus-offers__card-copy-icon bonus-offers__card-copy-icon--copy" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <use href="#icon-copy"></use>
+              </svg>
+              <svg class="bonus-offers__card-copy-icon bonus-offers__card-copy-icon--check" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4l-8 8-4-4" />
+              </svg>
+            </button>
+          </div>
+          <p class="bonus-offers__card-desc">
+            Sign up with our referral code, make the first transfer of $500 or more, and hold for 30 days
+            to receive $75 in Bitcoin!
+          </p>
+          <button class="bonus-offers__card-btn" type="button">Claim $75</button>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- Blog -->
+  <section class="blog container">
+    <div class="blog__header">
+      <h2 class="blog__title">Blog</h2>
+      <a href="#" class="blog__link">See all &raquo;</a>
+    </div>
+    <div class="blog__slider swiper">
+      <div class="swiper-wrapper">
+        <article class="blog__card blog__card--featured swiper-slide">
+          <a href="#" class="blog__card-link">
+            <img src="img/btc-bonus.png" alt="BTC Bonus" width="280" height="280" class="blog__card-image" />
+            <div class="blog__card-image-wrap">
+              <h3 class="blog__card-title">Planet Pro</h3>
+              <div class="blog__card-rating" aria-label="Rating 4.5 out of 5">
+                <svg width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <use href="#star"></use>
+                </svg>
+                <svg width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <use href="#star"></use>
+                </svg>
+                <svg width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <use href="#star"></use>
+                </svg>
+                <svg width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <use href="#star"></use>
+                </svg>
+                <svg width="14" height="14" fill="currentColor" class="blog__card-star-half" aria-hidden="true">
+                  <use href="#star"></use>
+                </svg>
+              </div>
+              <p class="blog__card-desc">Buy, trade, and hold 900+ cryptocurrencies on Planet Pro</p>
+            </div>
+          </a>
+        </article>
+        <article class="blog__card swiper-slide">
+          <a href="#" class="blog__card-link">
+            <img src="img/review-1.png" alt="" class="blog__card-image" />
+            <div class="blog__card-wrap">
+              <h3 class="blog__card-title">What Happens if Bitcoin Reaches an All-time High?</h3>
+              <span class="blog__card-time">
+            <svg width="14" height="14" fill="currentColor" aria-hidden="true">
+              <use href="#icon-clock"></use>
+            </svg>
+            2 years ago
+          </span>
+            </div>
+          </a>
+        </article>
+        <article class="blog__card swiper-slide">
+          <a href="#" class="blog__card-link">
+            <img src="img/review-1.png" alt="" class="blog__card-image" />
+            <div class="blog__card-wrap">
+              <h3 class="blog__card-title">What Happens if Bitcoin Reaches an All-time High?</h3>
+              <span class="blog__card-time">
+            <svg width="14" height="14" fill="currentColor" aria-hidden="true">
+              <use href="#icon-clock"></use>
+            </svg>
+            2 years ago
+          </span>
+            </div>
+          </a>
+        </article>
+        <article class="blog__card swiper-slide">
+          <a href="#" class="blog__card-link">
+            <img src="img/review-1.png" alt="" class="blog__card-image" />
+            <div class="blog__card-wrap">
+              <h3 class="blog__card-title">What Happens if Bitcoin Reaches an All-time High?</h3>
+              <span class="blog__card-time">
+            <svg width="14" height="14" fill="currentColor" aria-hidden="true">
+              <use href="#icon-clock"></use>
+            </svg>
+            2 years ago
+          </span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
